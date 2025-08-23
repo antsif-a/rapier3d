@@ -1,0 +1,135 @@
+{
+   <nvidiaegl0>
+   Memcheck:ReallocZero
+   fun:realloc
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   fun:NvGlEglApiInit
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   fun:UnknownInlinedFun
+   fun:loadEGLExternalPlatform
+}
+{
+   <nvidiaegl1>
+   Memcheck:BadSize
+   fun:posix_memalign
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   obj:/usr/lib/libnvidia-eglcore.so.575.57.08
+   fun:NvGlEglApiInit
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   obj:/usr/lib/libEGL_nvidia.so.575.57.08
+   fun:UnknownInlinedFun
+   fun:loadEGLExternalPlatform
+}
+{
+    <cairo>
+    Memcheck:Leak
+    ...
+    fun:_cairo*
+    ...
+}
+{
+    <regex_automata>
+    Memcheck:Leak
+    ...
+    fun:*regex_automata*
+    ...
+}
+{
+    <xml>
+    Memcheck:Leak
+    ...
+    fun:xml*
+    ...
+}
+{
+    <XML>
+    Memcheck:Leak
+    ...
+    fun:XML*
+    ...
+}
+{
+    <_dl>
+    Memcheck:Leak
+    ...
+    fun:_dl*
+    ...
+}
+{
+    <pango>
+    Memcheck:Leak
+    ...
+    fun:*pango*
+    ...
+}
+{
+    <FcConfig>
+    Memcheck:Leak
+    ...
+    fun:*FcConfig*
+    ...
+}
+{
+    <FcFont>
+    Memcheck:Leak
+    ...
+    fun:*FcFont*
+    ...
+}
+{
+    <gtk>
+    Memcheck:Leak
+    ...
+    fun:*gtk*
+    ...
+}
+{
+    <rsvg>
+    Memcheck:Leak
+    ...
+    fun:*rsvg*
+    ...
+}
+{
+    <hb harfbuzz?>
+    Memcheck:Leak
+    ...
+    fun:hb*
+    ...
+}
+{
+    <insert_a_suppression_name_here>
+    Memcheck:Leak
+    match-leak-kinds: reachable
+    fun:calloc
+    fun:pthread_setspecific@@GLIBC_2.34
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+    obj:*
+}
+{
+    <glfwInitEGL>
+    Memcheck:Leak
+    ...
+    fun:_glfwInitEGL
+    ...
+}

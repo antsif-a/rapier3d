@@ -1,0 +1,6 @@
+--leak-check=full
+--show-reachable=yes
+--error-limit=no
+--suppressions=glfw-init.supp
+--suppressions=glfw-window.supp
+--gen-suppressions=all

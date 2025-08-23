@@ -1,0 +1,133 @@
+{
+   <dlopen>
+   Memcheck:Leak
+   ...
+   fun:dlopen*
+   ...
+}
+{
+   <dconf>
+   Memcheck:Leak
+   ...
+   fun:dconf_*
+   ...
+}
+{
+   <gtk>
+   Memcheck:Leak
+   ...
+   fun:gtk_*
+   ...
+}
+{
+   <gdk>
+   Memcheck:Leak
+   ...
+   fun:gdk*
+   ...
+}
+{
+   <xkb>
+   Memcheck:Leak
+   ...
+   fun:xkb_keymap_new_from_buffer
+   ...
+}
+{
+   <gsettings>
+   Memcheck:Leak
+   ...
+   fun:g_settings_*
+   ...
+}
+{
+   <gtkcss>
+   Memcheck:Leak
+   ...
+   fun:_gtk_css_*
+   ...
+}
+{
+   <gdbus>
+   Memcheck:Leak
+   ...
+   fun:g_dbus_*
+   ...
+}
+{
+   <dbus>
+   Memcheck:Leak
+   ...
+   fun:dbus*
+   ...
+}
+{
+    <also dbus>
+    Memcheck:Leak
+    ...
+    fun:_dbus*
+    ...
+}
+{
+   <libdecor>
+   Memcheck:Leak
+   ...
+   fun:libdecor*
+   ...
+}
+{
+   <gobject>
+   Memcheck:Leak
+   ...
+   fun:g_object_*
+   ...
+}
+{
+   <libgvfsdbus>
+   Memcheck:Leak
+   ...
+   obj:/usr/lib/gio/modules/libgvfsdbus.so
+   ...
+}
+{
+   <openaux>
+   Memcheck:Leak
+   ...
+   fun:openaux
+   ...
+}
+{
+   <atk>
+   Memcheck:Leak
+   ...
+   fun:atk*
+   ...
+}
+{
+   <g_realloc>
+   Memcheck:Leak
+   ...
+   fun:g_realloc
+   ...
+}
+{
+   <g_malloc>
+   Memcheck:Leak
+   ...
+   fun:g_malloc*
+   ...
+}
+{
+   <all g gtk mem leaks fuck you>
+   Memcheck:Leak
+   ...
+   fun:g_*
+   ...
+}
+{
+   <wayland>
+   Memcheck:Leak
+   ...
+   fun:wl_*
+   ...
+}
