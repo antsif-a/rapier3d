@@ -17,6 +17,15 @@ what opengl features i plan to use (some of these mechanisms i already use, some
 - ARB_multi_draw_indirect (to optimize draw calls validation when nothing changes (?))
 - ARB_shader_draw_parameters (adds gl_DrawID to shaders, which command of multi_draw is executed)
 
+i try to depend on the most basics of the graphics programming (such that are multi-platform):
+- glad (opengl headers generator)
+- glfw (basic window management)
+- glm (great mathematics library)
+- tinygltf, tinyobj (for models loading, i tried assimp earlier and found it to complicated at synthesising different model types at one singularity)
+- stb_image for image loading
+
+althougt i think that i'll use more libraries as i understand that it would take too much time to build complex systems... (ecs for example)
+
 what i already have:
 - solid and robust opengl objects wrapper (rapier3d-gl)
 it uses "Resource Aquisition is Initialization" c++ principle, bacisally turning opengl from state machine to object oriented system
