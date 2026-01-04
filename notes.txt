@@ -1,0 +1,21 @@
+/* modern opengl
+https://www.tartley.com/files/2010/03/opengl-draw-calls.png
+https://computergraphics.stackexchange.com/questions/37/what-is-the-cost-of-changing-state/46#46
+direct state access (so no more glBind)
+bufferstorage (so no more glSubData, change memory from the pointer directly)
+sparse bindless texture arrays (optimize texture bind calls)
+buffer fragment (rather that buffer per object, share ubo's for many objects) + persistent mapping
+for large amounts of data in shaders use SSBO (shader storage buffer object)
+ARB_multi_draw_indirect (to optimize draw calls validation when nothing changes (?))
+ARB_shader_draw_parameters (adds gl_DrawID to shaders, which command of multi_draw is executed)
+ */
+
+todo:
+- gltf model, animation
+- ecs
+- physics, collisions
+- embedded shaders (with uniforms defined by code, only real practical operations defined by shaders)
+- framebuffer
+- physically based rendering
+- terrain generation
+- imgui debugging
