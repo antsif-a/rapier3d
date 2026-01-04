@@ -9,13 +9,13 @@ https://www.tartley.com/files/2010/03/opengl-draw-calls.png
 https://computergraphics.stackexchange.com/questions/37/what-is-the-cost-of-changing-state/46#46
 
 what opengl features i plan to use (some of these mechanisms i already use, some i haven't taken advantage of):
-direct state access (so no more glBind)
-bufferstorage (so no more glSubData, change memory from the pointer directly)
-sparse bindless texture arrays (optimize texture bind calls)
-buffer fragment (rather that buffer per object, share ubo's for many objects) + persistent mapping
-for large amounts of data in shaders use SSBO (shader storage buffer object)
-ARB_multi_draw_indirect (to optimize draw calls validation when nothing changes (?))
-ARB_shader_draw_parameters (adds gl_DrawID to shaders, which command of multi_draw is executed)
+- direct state access (so no more glBind)
+- bufferstorage (so no more glSubData, change memory from the pointer directly)
+- sparse bindless texture arrays (optimize texture bind calls)
+- buffer fragment (rather that buffer per object, share ubo's for many objects) + persistent mapping
+- for large amounts of data in shaders use SSBO (shader storage buffer object)
+- ARB_multi_draw_indirect (to optimize draw calls validation when nothing changes (?))
+- ARB_shader_draw_parameters (adds gl_DrawID to shaders, which command of multi_draw is executed)
 
 what i already have:
 - solid and robust opengl objects wrapper (rapier3d-gl)
